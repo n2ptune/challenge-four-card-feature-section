@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-family: var(--font-family);
+        background-color: var(--color-light-gray);
+      }
+
+      :root {
+        --color-red: hsl(0, 78%, 62%);
+        --color-cyan: hsl(180, 62%, 55%);
+        --color-orange: hsl(34, 97%, 64%);
+        --color-blue: hsl(212, 86%, 64%);
+        --color-dark-blue: hsl(234, 12%, 34%);
+        --color-grayish-blue: hsl(229, 6%, 66%);
+        --color-light-gray: hsl(0, 0%, 98%);
+        --font-family: 'Poppins', sans-serif;
+      }
+
+      .color-red {
+        color: var(--color-red);
+      }
+
+      .color-cyan {
+        color: var(--color-cyan);
+      }
+
+      .color-orange {
+        color: var(--color-orange);
+      }
+
+      .color-blue {
+        color: var(--color-blue);
+      }
+
+      .color-dark-blue {
+        color: var(--color-dark-blue);
+      }
+
+      .color-grayish-blue {
+        color: var(--color-grayish-blue);
+      }
+
+      .color-light-gray {
+        color: var(--color-light-gray);
+      }
+
+      .title {
+        font-size: 1.25rem;
+      }
+
+      .text-bold {
+        font-weight: 600;
+      }
+
+      .text-thin {
+        font-weight: 200;
+      }
+
+      header {
+        padding: 4rem 1.2rem;
+        text-align: center;
+      }
+
+      header .description {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+      }
+
+      footer {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+
+      .new-line {
+        display: none;
+      }
+
+      .card {
+        border-radius: 5px;
+        margin: 1rem;
+        width: 300px;
+        height: 200px;
+        padding: 2rem;
+        box-shadow: 0px 10px 15px 0.5px rgba(0, 0, 0, 0.11);
+        position: relative;
+      }
+
+      .card .card-header {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .card .card-description {
+        font-size: 0.8rem;
+      }
+
+      .card img {
+        position: absolute;
+        right: 2.25rem;
+        bottom: 2.25rem;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+
+      main .card-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (min-width: 1440px) {
+        .title {
+          font-size: 1.7rem;
+        }
+        .new-line {
+          display: block;
+        }
+        main .card-wrap {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+    </style>
+    <style>
+      .attribution {
+        font-size: 16px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title text-thin color-dark-blue">
+        Reliable, efficient delivery
+      </div>
+      <div class="title text-bold color-dark-blue">
+        Powered by Technology
+      </div>
+      <div class="description color-grayish-blue">
+        Our Artificial Intelligence powered tools use millions of project
+        data<br class="new-line" />
+        points to ensure that your project is successful
+      </div>
+    </header>
+    <main>
+      <section class="card-wrap">
+        <div class="card" style="border-top: 4px solid var(--color-cyan);">
+          <div class="card-header text-bold color-dark-blue">
+            Supervisor
+          </div>
+          <div class="card-description">
+            Monitors activity to identify project roadblocks
+          </div>
+          <img src="./images/icon-supervisor.svg" />
+        </div>
+        <div class="cards">
+          <div class="card" style="border-top: 4px solid var(--color-red);">
+            <div class="card-header text-bold color-dark-blue">
+              Team Builder
+            </div>
+            <div class="card-description">
+              Scans our talent network to create the optimal team for your
+              project
+            </div>
+            <img src="./images/icon-team-builder.svg" />
+          </div>
+          <div class="card" style="border-top: 4px solid var(--color-orange);">
+            <div class="card-header text-bold color-dark-blue">
+              Karma
+            </div>
+            <div class="card-description">
+              Regularly evaluates our talent to ensure quality
+            </div>
+            <img src="./images/icon-karma.svg" />
+          </div>
+        </div>
+        <div class="card" style="border-top: 4px solid var(--color-blue);">
+          <div class="card-header text-bold color-dark-blue">
+            Calculator
+          </div>
+          <div class="card-description">
+            Uses data from past projects to provide better delivery estimates
+          </div>
+          <img src="./images/icon-calculator.svg" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="mailto://vue2598@gmail.com">vue2598@gmail.com</a>.
+      </p>
+    </footer>
+  </body>
+</html>
